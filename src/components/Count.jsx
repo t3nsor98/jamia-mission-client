@@ -10,7 +10,7 @@ const Count = () => {
           className="bg-white text-green-600 p-6 rounded-lg shadow-lg"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 3}}
         >
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             The Number of Students Make Their Career Here

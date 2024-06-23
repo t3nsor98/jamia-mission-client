@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
@@ -22,7 +21,9 @@ const Hero = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
             JAMIA MISSION SCHOOL
           </h2>
-          <Link to="/mission-school">
+          <Link to="/school">
+            {" "}
+            {/* Adjusted Link to point to "/school" */}
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
