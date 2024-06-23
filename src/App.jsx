@@ -7,12 +7,14 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Message from "./components/Message";
+import Notice from "./components/Notice";
 
 function App() {
   return (
     <Router>
       <Header />
       <Hero />
+      <Notice />
       <Message />
       <div className="app">
         <Routes>
