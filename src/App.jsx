@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Message from "./components/Message";
 import Notice from "./components/Notice";
 import Count from "./components/Count";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Notice />
       <Message />
       <Count />
+      <Gallery />
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />

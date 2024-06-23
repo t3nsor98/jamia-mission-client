@@ -1,7 +1,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // add
-import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import notice1 from "../assets/notice1.jpeg";
