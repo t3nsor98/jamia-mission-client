@@ -10,7 +10,7 @@ const Footer = () => {
         <p className="mb-4">
           <strong>Address</strong>
           <br />
-          R-85/8 near Hari Masjid
+          R-85/8 Near Hari Masjid
           <br />
           Joga Bai Extension, Jamia Nagar
           <br />
