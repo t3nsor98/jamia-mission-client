@@ -6,12 +6,14 @@ import Coaching from "./pages/Coaching";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Message from "./components/Message";
 
 function App() {
   return (
     <Router>
       <Header />
       <Hero />
+      <Message />
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
