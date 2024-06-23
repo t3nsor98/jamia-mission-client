@@ -1,7 +1,8 @@
+import React from "react";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-//add
-import Slider from "react-slick";
+
 import image1 from "../assets/image1.jpeg";
 import image2 from "../assets/image2.jpeg";
 import image3 from "../assets/image3.jpeg";
@@ -43,48 +44,19 @@ const Gallery = () => {
           PHOTO GALLERY
         </h2>
         <Slider {...settings}>
-          <div className="p-2">
-            <img
-              src={image1}
-              alt="Gallery Image 1"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="p-2">
-            <img
-              src={image2}
-              alt="Gallery Image 2"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="p-2">
-            <img
-              src={image3}
-              alt="Gallery Image 3"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="p-2">
-            <img
-              src={image4}
-              alt="Gallery Image 4"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="p-2">
-            <img
-              src={image5}
-              alt="Gallery Image 5"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="p-2">
-            <img
-              src={image6}
-              alt="Gallery Image 6"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
+          {[image1, image2, image3, image4, image5, image6].map(
+            (image, index) => (
+              <div key={index} className="p-2">
+                <div className="relative w-full h-96">
+                  <img
+                    src={image}
+                    alt={`Gallery Image ${index + 1}`}
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+              </div>
+            )
+          )}
         </Slider>
       </div>
     </section>
