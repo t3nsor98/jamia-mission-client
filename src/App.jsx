@@ -6,6 +6,7 @@ import Message from "./components/Message";
 import Notice from "./components/Notice";
 import Count from "./components/Count";
 import Gallery from "./components/Gallery";
+import Schedule from "./components/Schedule";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Notice />
       <Message />
       <Count />
+      <Schedule />
       <Gallery />
       <div className="app">
         <Footer />
