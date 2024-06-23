@@ -5,11 +5,13 @@ import School from "./pages/School";
 import Coaching from "./pages/Coaching";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <Router>
       <Header />
+      <Hero />
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
