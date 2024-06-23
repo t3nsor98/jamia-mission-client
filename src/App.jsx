@@ -7,6 +7,7 @@ import Notice from "./components/Notice";
 import Count from "./components/Count";
 import Gallery from "./components/Gallery";
 import Schedule from "./components/Schedule";
+import Quote from "./components/Quote";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Notice />
       <Message />
       <Count />
+      <Quote />
       <Schedule />
       <Gallery />
       <div className="app">
