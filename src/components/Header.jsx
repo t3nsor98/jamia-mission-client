@@ -11,21 +11,21 @@ const Header = () => {
 
   return (
     <header className="bg-gradient-to-r from-green-400 to-green-600 text-white shadow-lg">
-      <div className="container mx-auto p-4 flex flex-col items-center md:flex-row md:justify-between md:items-center">
+      <div className="container mx-auto p-4 flex flex-col md:flex-row md:justify-between md:items-center">
         <div className="flex items-center mb-4 md:mb-0">
           <img src={logo} alt="Logo" className="h-16 w-16 mr-4 rounded-full" />
-          <Link
-            to="/"
-            className="text-4xl font-bold text-white hover:text-gray-200 transition duration-300"
-          >
-            JAMIA MISSION SCHOOL & JAMIA COACHING CENTER
-          </Link>
-        </div>
-        <div className="text-center md:text-right">
-          <p className="text-sm">
-            R-85/8 near Hari Masjid, Joga Bai Extension, Jamia Nagar, Okhla,
-            South Delhi - 110025
-          </p>
+          <div>
+            <Link
+              to="/"
+              className="text-2xl md:text-4xl font-bold text-white hover:text-gray-200 transition duration-300 whitespace-nowrap"
+            >
+              JAMIA MISSION SCHOOL & JAMIA COACHING CENTER
+            </Link>
+            <p className="text-sm">
+              R-85/8 near Hari Masjid, Joga Bai Extension, Jamia Nagar, Okhla,
+              South Delhi - 110025
+            </p>
+          </div>
         </div>
         <button
           className="md:hidden text-white focus:outline-none"
@@ -47,7 +47,7 @@ const Header = () => {
           </svg>
         </button>
       </div>
-      <nav className={`md:flex ${isOpen ? "block" : "hidden"}`}>
+      <nav className={`md:flex justify-center ${isOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col md:flex-row bg-green-500 md:bg-transparent w-full md:w-auto justify-center">
           {[
             "HOME",
@@ -66,7 +66,7 @@ const Header = () => {
             <li key={item} className="flex items-center">
               <Link
                 to={`/${item.toLowerCase().replace(/ /g, "-")}`}
-                className="block py-2 px-2 text-xs font-bold text-white hover:bg-green-700 md:hover:bg-transparent hover:text-gray-200 transition duration-300"
+                className="block py-2 px-2 text-xs md:text-sm font-bold text-white hover:bg-green-700 md:hover:bg-transparent hover:text-gray-200 transition duration-300"
               >
                 {item}
               </Link>
