@@ -23,7 +23,7 @@ const Header = () => {
         {/* Address */}
         <div className="text-center mb-8">
           <p className="text-base">
-            R-85/8 near Hari Masjid, Joga Bai Extension, Jamia Nagar, Okhla,
+            R-85/8 Near Hari Masjid, Joga Bai Extension, Jamia Nagar, Okhla,
             South Delhi - 110025
           </p>
         </div>
