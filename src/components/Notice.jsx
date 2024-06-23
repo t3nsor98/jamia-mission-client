@@ -1,8 +1,8 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-// add
+import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import notice1 from "../assets/notice1.jpeg";
 import notice2 from "../assets/notice2.jpeg";
 import notice3 from "../assets/notice3.jpeg";
@@ -24,13 +24,13 @@ const notices = [
 
 const Notice = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
   };
 
   return (
@@ -88,22 +88,32 @@ const Notice = () => {
         <div className="w-full md:w-1/2 p-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Notice Board</h2>
           <div className="overflow-hidden h-64">
-            <motion.div
-              className="flex flex-col space-y-4"
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 2, ease: "easeOut" }}
+            <Slider
+              dots={false}
+              infinite={true}
+              speed={500}
+              slidesToShow={2}
+              slidesToScroll={1}
+              autoplay={true}
+              autoplaySpeed={4000}
+              vertical={true}
+              verticalSwiping={true}
+              cssEase="linear"
             >
               {notices.map((notice, index) => (
-                <div
-                  key={index}
-                  className="bg-white text-green-600 p-4 rounded-lg shadow-lg"
-                >
-                  <p className="font-bold">{notice.date}</p>
-                  <p>{notice.message}</p>
+                <div key={index} className="p-4">
+                  <motion.div
+                    className="bg-white text-green-600 p-4 rounded-lg shadow-lg"
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <p className="font-bold">{notice.date}</p>
+                    <p>{notice.message}</p>
+                  </motion.div>
                 </div>
               ))}
-            </motion.div>
+            </Slider>
           </div>
         </div>
       </div>
