@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import logo from "../assets/logo.jpg";
 
 const navLinks = [
@@ -22,6 +21,10 @@ const School = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -67,7 +70,11 @@ const School = () => {
             {navLinks.map((link, index) => (
               <Link
                 key={index}
-                to={`/${link.toLowerCase().replace(/ /g, "-")}`}
+                to={
+                  link === "HOME"
+                    ? "/"
+                    : `/${link.toLowerCase().replace(/ /g, "-")}`
+                }
                 className="text-white hover:text-gray-200 transition duration-300"
               >
                 {link}
@@ -82,13 +89,38 @@ const School = () => {
             isOpen ? "block" : "hidden"
           } absolute top-20 inset-x-0 z-10`}
         >
+          {/* Close Button */}
+          <button
+            className="absolute top-2 right-2 text-white"
+            onClick={closeMenu}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+
           <ul className="flex flex-col items-center py-4">
             {navLinks.map((link, index) => (
               <li key={index} className="mb-4">
                 <Link
-                  to={`/${link.toLowerCase().replace(/ /g, "-")}`}
+                  to={
+                    link === "HOME"
+                      ? "/"
+                      : `/${link.toLowerCase().replace(/ /g, "-")}`
+                  }
                   className="text-white hover:text-gray-200 transition duration-300"
-                  onClick={toggleMenu}
+                  onClick={closeMenu}
                 >
                   {link}
                 </Link>

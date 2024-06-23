@@ -1,4 +1,10 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  useLocation,
+} from "react-router-dom";
 import { motion } from "framer-motion";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -13,10 +19,19 @@ import School from "./pages/School";
 import Coaching from "./pages/Coaching";
 import logo from "./assets/logo.jpg";
 
-function App() {
+const MainContent = () => {
+  const location = useLocation();
+
+  // Determine if the current path is /school or /coaching
+  const isSchoolPage = location.pathname === "/school";
+  const isCoachingPage = location.pathname === "/coaching";
+
+  if (isSchoolPage || isCoachingPage) {
+    return null;
+  }
+
   return (
-    <Router>
-      <Header />
+    <>
       <section className="bg-gradient-to-r from-green-400 to-green-600 text-white">
         <div className="container mx-auto p-4 flex flex-col md:flex-row items-center justify-between">
           {/* Left Section */}
@@ -60,7 +75,7 @@ function App() {
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
               JAMIA COACHING CENTER
             </h2>
-            <Link to="/coaching-center">
+            <Link to="/coaching">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -78,6 +93,21 @@ function App() {
       <Quote />
       <Schedule />
       <Gallery />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        {/* Main Content */}
+        <Route path="/" element={<MainContent />} />
+        {/* School and Coaching pages */}
+        <Route path="/school" element={<School />} />
+        <Route path="/coaching" element={<Coaching />} />
+      </Routes>
       <Footer />
     </Router>
   );
