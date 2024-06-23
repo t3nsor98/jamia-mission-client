@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import School from "./pages/School";
@@ -8,6 +7,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Message from "./components/Message";
 import Notice from "./components/Notice";
+import Count from "./components/Count";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Hero />
       <Notice />
       <Message />
+      <Count />
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
