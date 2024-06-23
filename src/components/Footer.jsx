@@ -89,7 +89,7 @@ const Footer = () => {
           LOCATION MAP
         </h3>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14026.810057138897!2d77.26939132889154!3d28.54713461560562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce381eb4c8e71%3A0x10950549e28c29e5!2sHari%20Masjid!5e0!3m2!1sen!2sin!4v1619379274467!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d218.99944643738544!2d77.28632144452406!3d28.570028677225267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM0JzEyLjMiTiA3N8KwMTcnMTEuMiJF!5e0!3m2!1sen!2sin!4v1719153572712!5m2!1sen!2sin"
           width="300"
           height="200"
           allowFullScreen=""

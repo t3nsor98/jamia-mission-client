@@ -71,9 +71,7 @@ const Header = () => {
                 {item}
               </Link>
               {index < 11 && (
-                <span className="hidden md:inline-block text-white mx-2">
-                  |
-                </span>
+                <span className="hidden md:inline-block text-white mx-2">|</span>
               )}
             </li>
           ))}
