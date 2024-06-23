@@ -4,10 +4,12 @@ import Home from "./pages/Home";
 import School from "./pages/School";
 import Coaching from "./pages/Coaching";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
     <Router>
+      <Header />
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
