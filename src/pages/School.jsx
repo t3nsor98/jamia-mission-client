@@ -7,7 +7,7 @@ import AdmissionS from "../components/AdmissionS";
 import Events from "../components/Events";
 import FacultiesSchool from "../components/FacultiesSchool";
 import Library from "../components/Library";
-import Emagazines from "../components/Emagazines"; // Import Emagazines component
+import Emagazines from "../components/Emagazines";
 
 const navLinks = [
   "HOME",

@@ -1,7 +1,14 @@
-// components/Coaching.jsx
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
+import Helpdesk from "../components/Helpdesk";
+import Onlinefees from "../components/Onlinefees";
+import AboutUsS from "../components/AboutUsS";
+import AdmissionS from "../components/AdmissionS";
+import Events from "../components/Events";
+import FacultiesSchool from "../components/FacultiesSchool";
+import Library from "../components/Library";
+import Emagazines from "../components/Emagazines";
 
 const navLinks = [
   "HOME",
@@ -9,23 +16,129 @@ const navLinks = [
   "ADMISSION",
   "EVENTS",
   "FACULTIES",
-  "GALLERY",
   "ONLINE FEES",
   "E MAGAZINE",
-  "FIT INDIA",
   "LIBRARY",
   "HELP DESK",
 ];
 
 const Coaching = () => {
+  const [showHelpDesk, setShowHelpDesk] = useState(false);
+  const [showOnlineFees, setShowOnlineFees] = useState(false);
+  const [showAboutUs, setShowAboutUs] = useState(false);
+  const [showAdmission, setShowAdmission] = useState(false);
+  const [showEvents, setShowEvents] = useState(false);
+  const [showFaculties, setShowFaculties] = useState(false);
+  const [showLibrary, setShowLibrary] = useState(false);
+  const [showEmagazines, setShowEmagazines] = useState(false); // State for Emagazines component
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const closeMenu = () => {
-    setIsOpen(false);
+  const handleNavLinkClick = (link) => {
+    switch (link) {
+      case "HELP DESK":
+        setShowHelpDesk(true);
+        setShowOnlineFees(false);
+        setShowAboutUs(false);
+        setShowAdmission(false);
+        setShowEvents(false);
+        setShowFaculties(false);
+        setShowLibrary(false);
+        setShowEmagazines(false);
+        setIsOpen(false);
+        break;
+      case "ONLINE FEES":
+        setShowHelpDesk(false);
+        setShowOnlineFees(true);
+        setShowAboutUs(false);
+        setShowAdmission(false);
+        setShowEvents(false);
+        setShowFaculties(false);
+        setShowLibrary(false);
+        setShowEmagazines(false);
+        setIsOpen(false);
+        break;
+      case "ABOUT US":
+        setShowHelpDesk(false);
+        setShowOnlineFees(false);
+        setShowAboutUs(true);
+        setShowAdmission(false);
+        setShowEvents(false);
+        setShowFaculties(false);
+        setShowLibrary(false);
+        setShowEmagazines(false);
+        setIsOpen(false);
+        break;
+      case "ADMISSION":
+        setShowHelpDesk(false);
+        setShowOnlineFees(false);
+        setShowAboutUs(false);
+        setShowAdmission(true);
+        setShowEvents(false);
+        setShowFaculties(false);
+        setShowLibrary(false);
+        setShowEmagazines(false);
+        setIsOpen(false);
+        break;
+      case "EVENTS":
+        setShowHelpDesk(false);
+        setShowOnlineFees(false);
+        setShowAboutUs(false);
+        setShowAdmission(false);
+        setShowEvents(true);
+        setShowFaculties(false);
+        setShowLibrary(false);
+        setShowEmagazines(false);
+        setIsOpen(false);
+        break;
+      case "FACULTIES":
+        setShowHelpDesk(false);
+        setShowOnlineFees(false);
+        setShowAboutUs(false);
+        setShowAdmission(false);
+        setShowEvents(false);
+        setShowFaculties(true);
+        setShowLibrary(false);
+        setShowEmagazines(false);
+        setIsOpen(false);
+        break;
+      case "LIBRARY":
+        setShowHelpDesk(false);
+        setShowOnlineFees(false);
+        setShowAboutUs(false);
+        setShowAdmission(false);
+        setShowEvents(false);
+        setShowFaculties(false);
+        setShowLibrary(true);
+        setShowEmagazines(false);
+        setIsOpen(false);
+        break;
+      case "E MAGAZINE":
+        setShowHelpDesk(false);
+        setShowOnlineFees(false);
+        setShowAboutUs(false);
+        setShowAdmission(false);
+        setShowEvents(false);
+        setShowFaculties(false);
+        setShowLibrary(false);
+        setShowEmagazines(true);
+        setIsOpen(false);
+        break;
+      default:
+        setShowHelpDesk(false);
+        setShowOnlineFees(false);
+        setShowAboutUs(false);
+        setShowAdmission(false);
+        setShowEvents(false);
+        setShowFaculties(false);
+        setShowLibrary(false);
+        setShowEmagazines(false);
+        setIsOpen(false);
+        break;
+    }
   };
 
   return (
@@ -62,24 +175,21 @@ const Coaching = () => {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-              ></path>
+              />
             </svg>
           </button>
 
           {/* Navigation Links */}
           <nav className="hidden md:flex space-x-4">
             {navLinks.map((link, index) => (
-              <Link
+              <button
                 key={index}
-                to={
-                  link === "HOME"
-                    ? "/"
-                    : `/${link.toLowerCase().replace(/ /g, "-")}`
-                }
+                onClick={() => handleNavLinkClick(link)}
                 className="text-white hover:text-gray-200 transition duration-300"
+                style={{ cursor: "pointer" }}
               >
                 {link}
-              </Link>
+              </button>
             ))}
           </nav>
         </div>
@@ -93,7 +203,7 @@ const Coaching = () => {
           {/* Close Button */}
           <button
             className="absolute top-2 right-2 text-white"
-            onClick={closeMenu}
+            onClick={toggleMenu}
           >
             <svg
               className="w-6 h-6"
@@ -107,24 +217,20 @@ const Coaching = () => {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
-              ></path>
+              />
             </svg>
           </button>
 
           <ul className="flex flex-col items-center py-4">
             {navLinks.map((link, index) => (
               <li key={index} className="mb-4">
-                <Link
-                  to={
-                    link === "HOME"
-                      ? "/"
-                      : `/${link.toLowerCase().replace(/ /g, "-")}`
-                  }
+                <button
+                  onClick={() => handleNavLinkClick(link)}
                   className="text-white hover:text-gray-200 transition duration-300"
-                  onClick={closeMenu}
+                  style={{ cursor: "pointer" }}
                 >
                   {link}
-                </Link>
+                </button>
               </li>
             ))}
           </ul>
@@ -151,6 +257,15 @@ const Coaching = () => {
           at Jamia Coaching Center and embark on a journey towards academic
           success and personal development.
         </p>
+        {/* Conditional Rendering of Components */}
+        {showHelpDesk && <Helpdesk />}
+        {showOnlineFees && <Onlinefees />}
+        {showAboutUs && <AboutUsS />}
+        {showAdmission && <AdmissionS />}
+        {showEvents && <Events />}
+        {showFaculties && <FacultiesSchool />}
+        {showLibrary && <Library />}
+        {showEmagazines && <Emagazines />} {/* Display Emagazines component */}
       </main>
     </div>
   );
