@@ -134,15 +134,22 @@ const Coaching = () => {
       {/* Main Content */}
       <main className="container mx-auto p-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          Welcome to Our Coaching Center
+          Welcome to Jamia Coaching Center
         </h2>
         <p className="text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          suscipit urna non ipsum ornare, et faucibus eros aliquam. Duis ac nibh
-          id eros mollis ultricies vel in libero. Donec euismod felis ac nunc
-          laoreet, nec egestas nulla sagittis. Nullam scelerisque fermentum
-          felis in molestie. Nam non tellus nec nisl ullamcorper bibendum.
-          Phasellus vel nunc ac urna tristique interdum.
+          Jamia Coaching Center (JCC), nestled in the heart of Batla House,
+          Jamia Nagar, Okhla, New Delhi, stands as a beacon of academic
+          excellence since its inception in 2017. Specializing in preparing
+          students for esteemed entrance exams like JMI, AMU, BHU, and more, JCC
+          has consistently achieved top-notch results year after year. Our
+          dedicated faculty, composed of highly qualified educators with
+          extensive experience, ensures each student receives personalized
+          attention and guidance. We cultivate a supportive yet competitive
+          environment that motivates students to strive for greatness. At JCC,
+          we believe in simplifying complex concepts without compromising depth,
+          enabling students to grasp challenging subjects effectively. Join us
+          at Jamia Coaching Center and embark on a journey towards academic
+          success and personal development.
         </p>
       </main>
     </div>

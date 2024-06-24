@@ -14,7 +14,7 @@ import Count from "./components/Count";
 import Gallery from "./components/Gallery";
 import Schedule from "./components/Schedule";
 import Quote from "./components/Quote";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import School from "./pages/School";
 import Coaching from "./pages/Coaching";
 import logo from "./assets/logo.jpg";
