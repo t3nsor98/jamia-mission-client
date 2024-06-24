@@ -14,6 +14,7 @@ import Count from "./components/Count";
 import Gallery from "./components/Gallery";
 import Schedule from "./components/Schedule";
 import Quote from "./components/Quote";
+import Widget from "./components/Widget";
 // import Home from "./pages/Home";
 import School from "./pages/School";
 import Coaching from "./pages/Coaching";
@@ -93,6 +94,7 @@ const MainContent = () => {
       <Quote />
       <Schedule />
       <Gallery />
+      <Widget />
     </>
   );
 };
