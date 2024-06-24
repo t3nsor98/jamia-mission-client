@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import Helpdesk from "../components/Helpdesk";
 import Onlinefees from "../components/Onlinefees";
-import AboutUsS from "../components/AboutUsS";
+import AboutUsC from "../components/AboutUsC"; // Updated import to AboutUsC
 import AdmissionS from "../components/AdmissionS";
 import Events from "../components/Events";
 import FacultiesSchool from "../components/FacultiesSchool";
@@ -30,7 +30,7 @@ const Coaching = () => {
   const [showEvents, setShowEvents] = useState(false);
   const [showFaculties, setShowFaculties] = useState(false);
   const [showLibrary, setShowLibrary] = useState(false);
-  const [showEmagazines, setShowEmagazines] = useState(false); // State for Emagazines component
+  const [showEmagazines, setShowEmagazines] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -260,7 +260,7 @@ const Coaching = () => {
         {/* Conditional Rendering of Components */}
         {showHelpDesk && <Helpdesk />}
         {showOnlineFees && <Onlinefees />}
-        {showAboutUs && <AboutUsS />}
+        {showAboutUs && <AboutUsC />} {/* Updated to use AboutUsC component */}
         {showAdmission && <AdmissionS />}
         {showEvents && <Events />}
         {showFaculties && <FacultiesSchool />}
