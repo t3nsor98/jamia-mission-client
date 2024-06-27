@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import Helpdesk from "../components/Helpdesk";
 import Onlinefees from "../components/Onlinefees";
-import AboutUsC from "../components/AboutUsC"; // Updated import to AboutUsC
+import AboutUsC from "../components/AboutUsC";
 import AdmissionS from "../components/AdmissionS";
 import Events from "../components/Events";
 import FacultiesSchool from "../components/FacultiesSchool";
 import Library from "../components/Library";
-import Emagazines from "../components/Emagazines";
+import EmagCoaching from "../components/EmagCoaching";
 
 const navLinks = [
   "HOME",
@@ -260,12 +260,13 @@ const Coaching = () => {
         {/* Conditional Rendering of Components */}
         {showHelpDesk && <Helpdesk />}
         {showOnlineFees && <Onlinefees />}
-        {showAboutUs && <AboutUsC />} {/* Updated to use AboutUsC component */}
+        {showAboutUs && <AboutUsC />}
         {showAdmission && <AdmissionS />}
         {showEvents && <Events />}
         {showFaculties && <FacultiesSchool />}
         {showLibrary && <Library />}
-        {showEmagazines && <Emagazines />} {/* Display Emagazines component */}
+        {showEmagazines && <EmagCoaching />}{" "}
+        {/* Display EmagCoaching component */}
       </main>
     </div>
   );
