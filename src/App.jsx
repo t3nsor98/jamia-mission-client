@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -6,6 +7,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa"; // Import WhatsApp icon
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Message from "./components/Message";
@@ -19,6 +21,48 @@ import Widget from "./components/Widget";
 import School from "./pages/School";
 import Coaching from "./pages/Coaching";
 import logo from "./assets/logo.jpg";
+
+const WhatsAppButtons = () => {
+  const openWhatsAppChat = (phoneNumber, message) => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank");
+  };
+
+  return (
+    <div className="fixed bottom-4 right-4 flex flex-col space-y-2">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
+        className="bg-green-500 p-4 rounded-full shadow-lg cursor-pointer hover:bg-green-600 transition duration-300"
+        onClick={() =>
+          openWhatsAppChat(
+            "7011339746",
+            "Hello, I would like to know more about Jamia Mission School."
+          )
+        }
+      >
+        <FaWhatsapp className="text-white text-3xl" />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.8 }}
+        className="bg-green-500 p-4 rounded-full shadow-lg cursor-pointer hover:bg-green-600 transition duration-300"
+        onClick={() =>
+          openWhatsAppChat(
+            "7011327025",
+            "Hello, I would like to know more about Jamia Coaching Center."
+          )
+        }
+      >
+        <FaWhatsapp className="text-white text-3xl" />
+      </motion.div>
+    </div>
+  );
+};
 
 const MainContent = () => {
   const location = useLocation();
@@ -111,6 +155,7 @@ function App() {
         <Route path="/coaching" element={<Coaching />} />
       </Routes>
       <Footer />
+      <WhatsAppButtons />
     </Router>
   );
 }
