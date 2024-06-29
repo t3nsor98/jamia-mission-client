@@ -36,7 +36,7 @@ const WhatsAppButtons = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className="bg-green-500 p-4 rounded-full shadow-lg cursor-pointer hover:bg-green-600 transition duration-300"
+        className="bg-purple-500 p-4 rounded-full shadow-lg cursor-pointer hover:bg-green-600 transition duration-300"
         onClick={() =>
           openWhatsAppChat(
             "7011339746",
@@ -50,7 +50,7 @@ const WhatsAppButtons = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
-        className="bg-green-500 p-4 rounded-full shadow-lg cursor-pointer hover:bg-green-600 transition duration-300"
+        className="bg-green-500 p-4 rounded-full shadow-lg cursor-pointer hover:bg-purple-600 transition duration-300"
         onClick={() =>
           openWhatsAppChat(
             "7011327025",
