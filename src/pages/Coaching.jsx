@@ -4,7 +4,7 @@ import logo from "../assets/logo.jpg";
 import Helpdesk from "../components/Helpdesk";
 import Onlinefees from "../components/Onlinefees";
 import AboutUsC from "../components/AboutUsC";
-import AdmissionS from "../components/AdmissionS";
+import AdmissionC from "../components/AdmissionC"; // Import AdmissionC component
 import Events from "../components/Events";
 import FacultiesSchool from "../components/FacultiesSchool";
 import Library from "../components/Library";
@@ -261,12 +261,11 @@ const Coaching = () => {
         {showHelpDesk && <Helpdesk />}
         {showOnlineFees && <Onlinefees />}
         {showAboutUs && <AboutUsC />}
-        {showAdmission && <AdmissionS />}
+        {showAdmission && <AdmissionC />}
         {showEvents && <Events />}
         {showFaculties && <FacultiesSchool />}
         {showLibrary && <Library />}
-        {showEmagazines && <EmagCoaching />}{" "}
-        {/* Display EmagCoaching component */}
+        {showEmagazines && <EmagCoaching />}
       </main>
     </div>
   );
