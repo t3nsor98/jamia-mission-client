@@ -2,7 +2,7 @@ import React from "react";
 
 const images = [];
 for (let i = 1; i <= 27; i++) {
-  images.push(`src/assets/Image_${String(i).padStart(3, "0")}.jpeg`);
+  images.push(`public/assets/Image_${String(i).padStart(3, "0")}.jpeg`);
 }
 
 const AdmissionC = () => {
