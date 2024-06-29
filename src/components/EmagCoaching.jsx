@@ -3,31 +3,75 @@ import React from "react";
 const emagazines = [
   {
     name: "Tenses (English) - Success Darpan",
-    link: "https://drive.google.com/file/d/1g6KoYt9pGtCMy8JeHEBwQifV9zUw39NK/view?usp=sharing",
+    link: "https://drive.google.com/uc?export=download&id=1g6KoYt9pGtCMy8JeHEBwQifV9zUw39NK",
   },
   {
     name: "Spoken English (English) - Success Darpan",
-    link: "https://drive.google.com/file/d/1b8j8JAW36VupWSlIwkxUDsYGPiYnBEKW/view?usp=sharing",
+    link: "https://drive.google.com/uc?export=download&id=1b8j8JAW36VupWSlIwkxUDsYGPiYnBEKW",
   },
   {
-    name: "Book Name 3",
-    link: "http://example.com/download3",
+    name: "Jamia ENG",
+    link: "https://drive.google.com/uc?export=download&id=1AypgUoG5IbgEw1yMYLH8Kmce2bN1htjo",
   },
   {
-    name: "Book Name 4",
-    link: "http://example.com/download4",
+    name: "Jamia Coaching Center_Booster_E_Nov22",
+    link: "https://drive.google.com/uc?export=download&id=1afM8fsDVVf6SLVZPee5I3FHty9ygYUZd",
   },
   {
-    name: "Book Name 5",
-    link: "http://example.com/download5",
+    name: "Interview Blueprint (English) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=17wbIovIwfjg6nAfqRaIV0WTyLxBOGqBc",
   },
   {
-    name: "Book Name 6",
-    link: "http://example.com/download6",
+    name: "English Grammer (English) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1whVpMVIkfcAf6CgusRHzH3ZAGQwQqYZc",
   },
   {
-    name: "Book Name 7",
-    link: "http://example.com/download7",
+    name: "1000 Verb Forms (English) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1Qz78pft2LY4C8bYf-ioWh-k1gSmXWoN-",
+  },
+  {
+    name: "Email Writing Ebook - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1AUzJgW7Zi5F4yjqTrKpoeUHmH4ldKEW0",
+  },
+  {
+    name: "One word Substitution (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1nj0sNyvoxRRL0VZZ-QHj707_aJOBWg8a",
+  },
+  {
+    name: "Idioms and Phrases (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1ZBpQHSXWU4KNMTKPuy2nCqlfolmsW8FW",
+  },
+  {
+    name: "Antonyms and Synonyms (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1G6XicebgbooB_uMkXs9TgwIHxO0LaFcR",
+  },
+  {
+    name: "Interview Blueprint Ebook (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1nnW_0cFqA2sbU_Xe3S2lZ2ORM_6nhaUM",
+  },
+  {
+    name: "Spoken English Ebook (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1YtfNvZuIiMeJQ-UqYr45-H_TUENtajvp",
+  },
+  {
+    name: "Verb Form Vocab Hindi Meaning (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1NrEbbJuZ-iheAAX2qwFuTi3Cu45Nn8vf",
+  },
+  {
+    name: "Basic Voabulary Ebook (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1VtL8KioJt2c-2Uea4w-07bN2B1KBp0kL",
+  },
+  {
+    name: "Tense with Exercises (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=10kYOZSj5jyozCqt2IS0PvpexiOQYVEH1",
+  },
+  {
+    name: "English Grammar Ebook (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1kEzhTI5qbmrXlcodMGmleMd-YwSLC2YD",
+  },
+  {
+    name: "3000 Daily Use Sentences with Pronunciation (Hindi) - Success Darpan",
+    link: "https://drive.google.com/uc?export=download&id=1JSkHYJZJ5tLwBq_rikQgnfxycd71PleQ",
   },
 ];
 
