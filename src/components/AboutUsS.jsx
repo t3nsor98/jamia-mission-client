@@ -65,6 +65,35 @@ const AboutUsS = () => {
             </p>
           </div>
         </div>
+
+        {/* New Section: Our Facilities */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-12"
+        >
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            Our Facilities
+          </h2>
+          <ul className="list-disc list-inside text-lg space-y-2">
+            {[
+              "Play to 12",
+              "Smart Classes",
+              "Activity-Based Education",
+              "Islamic Culture",
+              "CCTV Surveillance",
+            ].map((item, index) => (
+              <motion.li
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                className="transition-transform duration-300"
+              >
+                {item}
+              </motion.li>
+            ))}
+          </ul>
+        </motion.div>
       </div>
     </motion.div>
   );

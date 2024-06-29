@@ -57,6 +57,46 @@ const AboutUsC = () => {
             </p>
           </div>
         </div>
+
+        {/* New Section: Entrance Preparation */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-12"
+        >
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            Entrance Preparation For
+          </h2>
+          <ul className="list-disc list-inside text-lg space-y-2">
+            {[
+              "Class 6th to 9th",
+              "11th Arts Commerce Science",
+              "Diploma Engineering",
+              "Political Science",
+              "History",
+              "BBA",
+              "B.Com",
+              "BA",
+              "Economics",
+              "Psychology",
+              "Geography",
+              "Sociology",
+              "BA LLB",
+              "Hotel Management",
+              "Mass Media",
+              "Languages Courses",
+            ].map((item, index) => (
+              <motion.li
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                className="transition-transform duration-300"
+              >
+                {item}
+              </motion.li>
+            ))}
+          </ul>
+        </motion.div>
       </div>
     </motion.div>
   );
