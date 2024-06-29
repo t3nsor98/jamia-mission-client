@@ -1,51 +1,51 @@
 import React from "react";
 import teacher1 from "../assets/teacher1.jpeg";
-// import teacher2 from "../assets/teacher2.jpg";
-// import teacher3 from "../assets/teacher3.jpg";
-// import teacher4 from "../assets/teacher4.jpg";
-// import teacher5 from "../assets/teacher5.jpg";
-// import teacher6 from "../assets/teacher6.jpg";
+import teacher2 from "../assets/teacher2.jpeg";
+import teacher3 from "../assets/teacher3.jpeg";
+import teacher4 from "../assets/teacher4.jpeg";
+import teacher5 from "../assets/teacher5.jpeg";
+import teacher6 from "../assets/teacher6.jpeg";
 
 const FacultiesSchool = () => {
   const faculties = [
     {
       id: 1,
-      name: "Mr. John Doe",
-      description: "Mathematics Expert with 15+ years of teaching experience.",
+      name: "Dr. Rahul Kushwaha",
+      description:
+        "Head of Management and Biology faculty with BAMS qualification",
       image: teacher1,
     },
     {
       id: 2,
-      name: "Dr. Jane Smith",
-      description: "Science Specialist with a Ph.D. in Physics and Biology.",
-      image: teacher1,
+      name: "Adeeba Khan",
+      description:
+        "She is a graduate with a major in Political Science and English, and she has two years of teaching experience at Tender Hearts School, where she taught English to students from grades 1 to 8.",
+      image: teacher2,
     },
     {
       id: 3,
-      name: "Ms. Emily Brown",
+      name: "Farooq Ahmad Malik ",
       description:
-        "English Language Mentor known for her innovative teaching methods.",
-      image: teacher1,
+        "He holds an MSc in Mathematics, a B Ed, and a PGDCA from Kashmir University, as well as an MA in Islamic Studies from MANUU Hyderabad. With 10 years of teaching experience, he has spent seven years at SEM College of Education, Management Studies, and Computer Sciences in Humhama Srinagar (J&K), where he taught BBA, BCA, ITI, and B Ed students. Additionally, he taught BSc IT, BCA, and MSc IT at NIELIT Srinagar for two years. He also has two years of experience as an academic counselor at IGNOU, a role in which he is still approved.",
+      image: teacher3,
     },
     {
       id: 4,
-      name: "Mr. Michael Clark",
-      description:
-        "Computer Science Guru with expertise in coding and technology.",
-      image: teacher1,
+      name: "Aquib Sir",
+      description: "He holds an MSc and a BEd in Physics.",
+      image: teacher4,
     },
     {
       id: 5,
-      name: "Mrs. Sarah Johnson",
-      description: "History Enthusiast who makes learning the past exciting.",
-      image: teacher1,
+      name: "Danish Sir",
+      description: "He holds a BTech degree.",
+      image: teacher5,
     },
     {
       id: 6,
-      name: "Ms. Olivia Williams",
-      description:
-        "Art and Music Teacher, nurturing creativity in young minds.",
-      image: teacher1,
+      name: "Sahabuddin Sir",
+      description: "He holds an MSc degree and a B.Ed in Chemistry.",
+      image: teacher6,
     },
   ];
 
