@@ -1,4 +1,3 @@
-import React from "react";
 
 const Footer = () => {
   return (
@@ -73,12 +72,12 @@ const Footer = () => {
             </a>
           </li>
           <li className="mb-2">
-            <a href="/school" className="hover:underline">
+            <a href="/School" className="hover:underline">
               School
             </a>
           </li>
           <li className="mb-2">
-            <a href="/coaching" className="hover:underline">
+            <a href="/Coaching" className="hover:underline">
               Coaching
             </a>
           </li>
