@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -151,8 +151,8 @@ function App() {
         {/* Main Content */}
         <Route path="/" element={<MainContent />} />
         {/* School and Coaching pages */}
-        <Route path="/school" element={<School />} />
-        <Route path="/coaching" element={<Coaching />} />
+        <Route path="/School" element={<School />} />
+        <Route path="/Coaching" element={<Coaching />} />
       </Routes>
       <Footer />
       <WhatsAppButtons />
