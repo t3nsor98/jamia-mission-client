@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white p-8 flex flex-col md:flex-row justify-between">
@@ -96,6 +95,22 @@ const Footer = () => {
           title="Location Map"
           className="rounded-lg w-full"
         ></iframe>
+      </div>
+      <div className="w-full mt-8 md:mt-0 text-center">
+        <p className="text-sm">
+          Design and developed by
+          <a
+            href="https://digbijayalenka.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline ml-1"
+          >
+            t3nsor
+          </a>
+          ,
+          <br />
+          © Jamia Mission School 2024
+        </p>
       </div>
     </footer>
   );
