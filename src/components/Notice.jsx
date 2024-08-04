@@ -15,8 +15,7 @@ const notices = [
     message: "Independence day celebration on 15th August.",
     date: "2024-06-15",
   },
-  { message: "New admissions open from 1st September.", date: "2024-06-20" },
-  { message: "Annual function on 10th December.", date: "2024-06-25" },
+  { message: "New admissions is currently going on.", date: "2024-06-20" },
 ];
 
 const Notice = () => {
