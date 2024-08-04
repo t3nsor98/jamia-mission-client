@@ -10,9 +10,7 @@ import notice5 from "../assets/notice5.jpeg";
 import notice6 from "../assets/notice6.jpeg";
 
 const notices = [
-  { message: "Annual sports meet on 25th June.", date: "2024-06-01" },
-  { message: "Parent-teacher meeting on 5th July.", date: "2024-06-05" },
-  { message: "Summer vacation starts from 10th July.", date: "2024-06-10" },
+  { message: "Parent-teacher meeting on 7th August.Time- 8:30 AM to 1:30 PM", date: "2024-08-07" },
   {
     message: "Independence day celebration on 15th August.",
     date: "2024-06-15",

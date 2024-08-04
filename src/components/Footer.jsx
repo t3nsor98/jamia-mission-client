@@ -28,7 +28,7 @@ const Footer = () => {
           <strong>Follow Us</strong>
           <br />
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/jccstudy"
             target="_blank"
             rel="noopener noreferrer"
             className="block hover:underline"
@@ -36,7 +36,7 @@ const Footer = () => {
             Facebook
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/jamiacoachingcenter/"
             target="_blank"
             rel="noopener noreferrer"
             className="block hover:underline"
@@ -44,7 +44,7 @@ const Footer = () => {
             Instagram
           </a>
           <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/@JAMIACOACHINGCENTERS"
             target="_blank"
             rel="noopener noreferrer"
             className="block hover:underline"
