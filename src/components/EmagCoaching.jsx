@@ -1,5 +1,5 @@
 import React from "react";
-
+// show swiggy mini store using iframe 
 const emagazines = [
   {
     name: "Tenses (English) - Success Darpan",
