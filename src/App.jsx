@@ -89,7 +89,7 @@ const MainContent = () => {
             <img
               src={logo}
               alt="Jamia Mission School Logo"
-              className="h-40 w-40 rounded-full mb-4"
+              className="h-20 w-20 rounded-full mb-4"
             />
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
               JAMIA MISSION SCHOOL
@@ -115,7 +115,7 @@ const MainContent = () => {
             <img
               src={logo}
               alt="Jamia Coaching Center Logo"
-              className="h-40 w-40 rounded-full mb-4"
+              className="h-20 w-20 rounded-full mb-4"
             />
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
               JAMIA COACHING CENTER
